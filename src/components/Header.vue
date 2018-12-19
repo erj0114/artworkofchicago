@@ -18,14 +18,15 @@ export default {
 
 #header
  {
-   height: 300px;
+   height: 200px;
    width:  100%;
 
-   background-image: url("../assets/chicagopic.png");
+   background-image: url("../assets/artworkofchicago.png");
    background-size: cover;
    background-repeat: no-repeat;
    background-position-y: -150px;
 }
+
 @media only screen and (max-width: 600px)  {
   
   #header
@@ -40,4 +41,5 @@ export default {
     background-position-y: -100px;
   }
 } 
+
 </style>

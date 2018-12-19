@@ -8,11 +8,7 @@
 
   <b-collapse is-nav id="nav_collapse">
 
-    <b-navbar-nav>
-      <b-nav-item href="#">Baby Boy Miller</b-nav-item>
-      <b-nav-item href="#">Eric Johnson</b-nav-item>
-      <b-nav-item href="#">Judson Swertman</b-nav-item>
-    </b-navbar-nav>
+    
 
     <!-- Right aligned nav items -->
     <b-navbar-nav class="ml-auto">
@@ -30,6 +26,7 @@
         <b-dropdown-item href="#">Profile</b-dropdown-item>
         <b-dropdown-item href="#">Signout</b-dropdown-item>
       </b-nav-item-dropdown>
+      
     </b-navbar-nav>
 
   </b-collapse>
@@ -46,5 +43,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.navbar-brand{
+  font-weight:bold;
+}
 </style>
