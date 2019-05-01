@@ -1,8 +1,6 @@
 <template>
     <li>
-      <a :href="link" target="_blank" rel="noopener">
-        {{name}}
-      </a>
+      <router-link :to="link">{{name}}</router-link>
     </li>
 </template>
 

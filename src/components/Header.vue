@@ -21,7 +21,7 @@ export default {
    height: 200px;
    width:  100%;
 
-   background-image: url("../assets/artworkofchicago.png");
+   background-image: url("./lookingdownontolavenderfields.png");
    background-size: cover;
    background-repeat: no-repeat;
    background-position-y: -150px;

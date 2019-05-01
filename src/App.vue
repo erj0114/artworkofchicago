@@ -2,11 +2,10 @@
   <div id="app">
     <Header/>
     <Navigation/>
-    <Home msg="Artwork of Chicago"/>
+     <router-view></router-view>
     <Footer/>
   </div>
 </template>
-
 <script>
 import Home from './components/Home.vue'
 import Header from './components/Header.vue'
@@ -31,7 +30,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #ffffff;
+  color:lightgreen;
+  text-decoration: purple underline;
+  box-shadow: 0px 100px 100px lightsalmon;
   background-color: rgb(5, 5, 5);
 }
 </style>
