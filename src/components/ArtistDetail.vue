@@ -15,14 +15,6 @@ Template is like a layout, script won't show up if it's not in template.
         class="main-pic-modal"
         v-bind:style="'background-image:url(/ArtistPics/' + artists[id].mainPic +')'"
       ></div>
-      <b-button v-if="artists[id].instagramLink" :href="artists[id].instagramLink" class="instagram">
-            <i class="fab fa-instagram"></i>
-      Artist's Instagram      
-    </b-button> 
-    <b-button v-if="artists[id].webLink" :href="artists[id].webLink" class="webLink">
-            <i class="fab fa-webLink"></i>
-      Artist's Web Link      
-    </b-button> 
     </b-modal>
     <div class="pics">
       <!-- The modal -->
@@ -36,6 +28,18 @@ Template is like a layout, script won't show up if it's not in template.
           v-bind:style="'background-image:url(/ArtistPics/' + pic +')'"
         ></div>
       </div>
+      <b-button
+        v-if="artists[id].instagramLink"
+        :href="artists[id].instagramLink"
+        class="instagram"
+      >
+        <i class="fab fa-instagram"></i>
+        Artist's Instagram
+      </b-button>
+      <b-button v-if="artists[id].webLink" :href="artists[id].webLink" class="webLink">
+        <i class="fab fa-webLink"></i>
+        Artist's Web Link
+      </b-button>
     </div>
   </div>
 </template>
@@ -46,44 +50,74 @@ export default {
   data: function() {
     return {
       artists: {
-        babyboymiller: {
-          name: "Baby Boy Miller / Michael Michael Thomas",
-          artistPrefix: "Modern",
-          description:
-            "This Artist uses: Crayons, Pens, Marker, and Acrylic Paint.",
-          mainPic: "fergPic.jpg",
-          webLink: "https://www.facebook.com/michaelmichael.thomas",
-          pics: [
-            "fergpic1.jpg",
-            "bbm1.png",
-            "fergpic2.jpg",
-            "fergpic3.jpg",
-            "fergpic4.jpg",
-            "fergpic5.jpg",
-            "fergpic6.jpg",
-            "fergpic7.jpg",
-            "fergpic8.jpg",
-            "fergpic9.jpg",
-            "fergpic10.jpg",
-            "fergpic11.jpg",
-            "fergpic12.jpg",
-            "fergpic13.jpg",
-            "fergpic14.jpg",
-            "fergpic15.jpg",
-            "fergpic16.jpg",
-            "fergpic17.jpg",
-            "fergpic18.jpg",
-            "fergpic19.jpg",
-            "fergpic20.jpg",
-            ]
-        },
+        // babyboymiller: {
+        //   name: "Baby Boy Miller / Michael Michael Thomas",
+        //   artistPrefix: "Modern",
+        //   description:
+        //     "This Artist uses: Crayons, Pens, Marker, and Acrylic Paint.",
+        //   mainPic: "fergPic.jpg",
+        //   webLink: "https://www.facebook.com/michaelmichael.thomas",
+        //   pics: [
+        //     "fergpic1.jpg",
+        //     "bbm1.png",
+        //     "fergpic2.jpg",
+        //     "fergpic3.jpg",
+        //     "fergpic4.jpg",
+        //     "fergpic5.jpg",
+        //     "fergpic6.jpg",
+        //     "fergpic7.jpg",
+        //     "fergpic8.jpg",
+        //     "fergpic9.jpg",
+        //     "fergpic10.jpg",
+        //     "fergpic11.jpg",
+        //     "fergpic12.jpg",
+        //     "fergpic13.jpg",
+        //     "fergpic14.jpg",
+        //     "fergpic15.jpg",
+        //     "fergpic16.jpg",
+        //     "fergpic17.jpg",
+        //     "fergpic18.jpg",
+        //     "fergpic19.jpg",
+        //     "fergpic20.jpg",
+        //   ]
+        // },
         eric: {
           name: "Eric Johnson",
           artistPrefix: "Chicago Native",
           description: "Acrylic, Pencil, Marker, Crayon",
           mainPic: "birthdayFace.JPG",
           webLink: "https://www.erj-art.com",
-          pics: ["sunlightinthecavern.JPG", "autumn.png", "tropicalbreeze.JPG"]
+          pics: 
+          [
+          "sunlightinthecavern.JPG", 
+          "autumn.png", 
+          "tropicalbreeze.JPG",
+          "artworkofchicago.png",
+          "underthesea.png",
+          "lavenderfields.png",
+          "mynewtoothpaste.png",
+          "evolution.JPG",
+          ]
+        }, 
+        mattgeer: {
+          name: "Matt Geer",
+          artistPrefix: "Chicago Native",
+          description: "Matt Geer is a rare breed of Chicago’s avant garde underbelly.Mostly self taught, with a foundation in street art, paintng, and drawing. He is also known to work in textiles, and found objects. Breaking his work into separate series, each with its own rule set, and focus. His body of work shares the same underlying themes, but with a shifting focus through the lens of the artist. His currant paintings have become more minimalist. Favoring bold lines, and color in a reimagining of his own graphic roots. Elevating what grabs the eye, and casting the rest aside as unnecessary filler.",
+          mainPic: "mattgeer.jpg",
+          webLink: "https://www.facebook.com/matt.geer.39",
+          pics: 
+          [
+          "mattgeer1.jpg",
+          "mattgeer2.jpg",
+          "mattgeer3.jpg",
+          "mattgeer4.jpg",
+          "mattgeer5.jpg",
+          "mattgeer6.jpg",
+          "mattgeer7.jpg",
+          "mattgeer8.jpg",
+          "mattgeer9.jpg",
+          "mattgeer10.jpg",
+          ]
         },
         // "erin": {
         //   name: "Erin Donnelly Ellis",
@@ -100,7 +134,7 @@ export default {
         judson: {
           name: "Judson Schwertman",
           artistPrefix: "Chicago Native",
-          description: "Painter and Drawing Specialist",
+          description: "Abstract Painter / Modern Artist",
           mainPic: "juddself.jpg",
           instagramLink: "https://www.instagram.com/juddie_3birds/",
           pics: [
@@ -119,17 +153,34 @@ export default {
             "judd9.jpg",
             "judd1.png",
             "judd4.jpg",
+            "juddpic1.jpg",
+            "juddpic2.jpg",
+            "juddpic3.jpg",
+            "juddpic4.jpg",
+            "juddpic5.jpg",
+            "juddpic6.jpg",
+            "juddpic7.jpg",
+            "juddpic8.jpg",
+            "juddpic9.jpg",
+            "juddpic10.jpg",
+            "juddpic11.jpg",
+            "juddpic12.jpg",
+            "juddpic13.jpg",
+            "juddpic14.jpg",
+            "juddpic15.jpg",
+            "juddpic16.jpg",
+            "juddpic17.jpg",
           ]
         },
         wendy: {
           name: "Wendy Montague",
           artistPrefix: "Chicago Native",
           description: "Painter, Mixed-Media, Drawings",
-          instagramLink: "https://www.instagram.com/wendymontague/",          
+          instagramLink: "https://www.instagram.com/wendymontague/",
           mainPic: "wendy2.jpg",
           pics: [
             "wendypic.jpg",
-            "wendy.jpg", 
+            "wendy.jpg",
             "wendy3.jpg",
             "wendy1.jpg",
             "wendypic4.jpg",
@@ -139,15 +190,15 @@ export default {
             "wendypic8.jpg",
             "wendypic9.jpg",
             "wendypic10.jpg",
-            "wendypic11.jpg",
-            ]
-        // },
-        // dave: {
-        //   name: "Dave Depew",
-        //   artistPrefix: "Chicago Native",
-        //   description: "Painter and Drawer",
-        //   mainPic: "davepic.jpg",
-        //   pics: ["pic 1 .png", "pic 2 .png", "pic 3 .png"]
+            "wendypic11.jpg"
+          ]
+          // },
+          // dave: {
+          //   name: "Dave Depew",
+          //   artistPrefix: "Chicago Native",
+          //   description: "Painter and Drawer",
+          //   mainPic: "davepic.jpg",
+          //   pics: ["pic 1 .png", "pic 2 .png", "pic 3 .png"]
           // },"thano": {
           //   name: "Thano Ellis",
           //   artistPrefix: "Chicago Native",
@@ -160,16 +211,7 @@ export default {
           //   ]
         }
 
-        // "babyboymiller": {
-        //   name: "Baby Boy Miller",
-        //   description: "blah blah blah",
-        //   artistPrefix: "Ferg is Funny",
-        //   mainPic: "Main image we want in here",
-        //   pics: [
-        //     "pic 1 .png",
-        //     "pic 2 .png"
-        //   ]
-        // },
+        
       }
     };
   },
@@ -218,41 +260,45 @@ export default {
 }
 
 .instagramLink {
- background-color: coral;
- text-decoration-color: red;
- border-color: rgb(187, 12, 231);
+  background-color: coral;
+  text-decoration-color: lightblue;
+  border-color: rgb(187, 12, 231);
 }
 .btn-secondary:hover {
-    color: rgb(255, 251, 4);
-    background-color:rgb(234, 0, 255);
-    border-color: #0af515;
-} 
+  color: rgb(255, 251, 4);
+  background-color: rgb(234, 0, 255);
+  border-color: #0af515;
+}
 </style>
 
 <style>
 .modal-body {
- background-color: black;
+  background-color: black;
 }
 .modal-header {
- background-color: rgb(17, 221, 248);
+  background-color: rgb(17, 221, 248);
 }
 .modal-footer {
- background-color: rgb(187, 12, 231);
+  background-color: rgb(187, 12, 231);
 }
 .btn.btn-primary {
- background-color: black;
- color: lightcoral;
- transition: linear 1s;
+  background-color: black;
+  color: lightcoral;
+  transition: linear 1s;
 }
 .btn.btn-secondary {
- text: bold; 
- color:blue;
- background-color: coral;
- transition: linear 1s;
+  text: bold;
+  color: blue;
+  background-color: coral;
+  transition: linear 1s;
 }
 button.close {
-color: yellow;
-transition: linear 1s;
+  color: yellow;
+  transition: linear 1s;
+}
+nav.drop-down. {
+  color: purple;
+  transition: linear 1s;
 }
 </style>
 >

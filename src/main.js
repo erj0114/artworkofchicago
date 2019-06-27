@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
 import Home from './components/Home'
+import Login from './components/Login'
+import Logout from './components/Logout'
 import ArtistDetail from './components/ArtistDetail'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
@@ -15,6 +17,8 @@ Vue.config.productionTip = false
 
 const routes = [
   { path: '/', component: Home },
+  { path: '/login', component: Login },
+  { path: '/logout', component: Logout },
   { path: '/artist/:id', component: ArtistDetail, props: true  }
 ]
 
