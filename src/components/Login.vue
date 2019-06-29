@@ -7,7 +7,7 @@
           <h2>Login</h2>
         </b-col>
         <b-col>
-          <input type="text" v-model="username">
+          <b-form-input type="text" v-model="username" placeholder="Login"/>
         </b-col>
       </b-row>
       <b-row>
@@ -15,18 +15,16 @@
           <h2>Password</h2>
         </b-col>
         <b-col>
-          <input type="text" v-model="password">
+          <b-form-input type="text" v-model="password" placeholder="Password"/>
         </b-col>
       </b-row>
       <b-row>
         <b-col>
-          <b-button @click="login()">
-            Login
-          </b-button>
+          <b-button @click="login()">Login</b-button>
         </b-col>
       </b-row>
     </b-container>
-    <h3>Forgot your Password?</h3>
+    <button type="button" class="btn btn-secondary">Forgot Your Password</button>
   </div>
 </template>
 
@@ -43,12 +41,16 @@ export default {
   },
   methods: {
     login() {
-      axios.post("http://localhost:3000/checkLogin",{
-        username: this.username,
-        password: this.password
-      }, {
-        withCredentials: true
-      })
+      axios.post(
+        "http://localhost:3000/checkLogin",
+        {
+          username: this.username,
+          password: this.password
+        },
+        {
+          withCredentials: true
+        }
+      );
     }
   }
 };

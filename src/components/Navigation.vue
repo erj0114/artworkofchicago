@@ -6,7 +6,7 @@
       <b-navbar-brand>
         <router-link to="/">
           Artwork of Chicago
-          <br>Home
+          <br />Home
         </router-link>
       </b-navbar-brand>
       <b-collapse is-nav id="nav_collapse">
@@ -19,22 +19,22 @@
               <Artist name="Dave Depew" link="/artist/dave"/>
             </b-dropdown-item>-->
             <b-dropdown-item>
-              <Artist name="Eric Johnson" link="/artist/eric"/>
+              <Artist name="Eric Johnson" link="/artist/eric" />
             </b-dropdown-item>
             <!-- <b-dropdown-item>
               <Artist name="Erin Donnelly Ellis" link="/artist/erin"/>
             </b-dropdown-item>-->
             <b-dropdown-item>
-              <Artist name="Judson Swertman" link="/artist/judson"/>
+              <Artist name="Judson Swertman" link="/artist/judson" />
             </b-dropdown-item>
             <b-dropdown-item>
-              <Artist name="Matt Geer" link="/artist/mattgeer"/>
+              <Artist name="Matt Geer" link="/artist/mattgeer" />
             </b-dropdown-item>
             <!-- <b-dropdown-item>
               <Artist name="Thano Ellis" link="/artist/thano"/>
             </b-dropdown-item>-->
             <b-dropdown-item>
-              <Artist name="Wendy Montague" link="/artist/wendy"/>
+              <Artist name="Wendy Montague" link="/artist/wendy" />
             </b-dropdown-item>
           </b-nav-item-dropdown>
           <b-nav-item href="https://www.instagram.com/artworkofchicago/" class="instagram">
@@ -60,16 +60,20 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+    <b-modal id="modal-1" title="Register">
+      <register>Register</register>
+    </b-modal>
   </div>
 </template>
 
 <script>
 import ArtistVue from "./Artist.vue";
-
+import Register from "./Register.vue";
 export default {
   name: "Navigation",
   components: {
-    Artist: ArtistVue
+    Artist: ArtistVue,
+    Register
   }
 };
 </script>
