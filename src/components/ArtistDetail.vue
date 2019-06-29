@@ -8,7 +8,7 @@ Template is like a layout, script won't show up if it's not in template.
       v-b-modal="'mainpicmodal'"
       class="main-pic"
       v-bind:src="'/ArtistPics/' + artists[id].mainPic"
-    >
+    />
     <b-modal :id="'mainpicmodal'" body-class="modal-body">
       <div
         v-b-modal="'mainpicmodal'"
@@ -18,7 +18,10 @@ Template is like a layout, script won't show up if it's not in template.
     </b-modal>
     <div class="pics">
       <!-- The modal -->
-      <div v-for="pic in artists[id].pics" class="pic-container">
+      <div
+          v-for="pic in artists[id].pics"
+          :key="pic"
+          class="pic-container">
         <b-modal :id="'myModal'+pic" body-class="modal-body">
           <div class="sub-pic" v-bind:style="'background-image:url(/ArtistPics/' + pic +')'"></div>
         </b-modal>
@@ -87,36 +90,35 @@ export default {
           description: "Acrylic, Pencil, Marker, Crayon",
           mainPic: "birthdayFace.JPG",
           webLink: "https://www.erj-art.com",
-          pics: 
-          [
-          "sunlightinthecavern.JPG", 
-          "autumn.png", 
-          "tropicalbreeze.JPG",
-          "artworkofchicago.png",
-          "underthesea.png",
-          "lavenderfields.png",
-          "mynewtoothpaste.png",
-          "evolution.JPG",
+          pics: [
+            "sunlightinthecavern.JPG",
+            "autumn.png",
+            "tropicalbreeze.JPG",
+            "artworkofchicago.png",
+            "underthesea.png",
+            "lavenderfields.png",
+            "mynewtoothpaste.png",
+            "evolution.JPG"
           ]
-        }, 
+        },
         mattgeer: {
           name: "Matt Geer",
           artistPrefix: "Chicago Native",
-          description: "Matt Geer is a rare breed of Chicago’s avant garde underbelly.Mostly self taught, with a foundation in street art, paintng, and drawing. He is also known to work in textiles, and found objects. Breaking his work into separate series, each with its own rule set, and focus. His body of work shares the same underlying themes, but with a shifting focus through the lens of the artist. His currant paintings have become more minimalist. Favoring bold lines, and color in a reimagining of his own graphic roots. Elevating what grabs the eye, and casting the rest aside as unnecessary filler.",
+          description:
+            "Matt Geer is a rare breed of Chicago’s avant garde underbelly.Mostly self taught, with a foundation in street art, paintng, and drawing. He is also known to work in textiles, and found objects. Breaking his work into separate series, each with its own rule set, and focus. His body of work shares the same underlying themes, but with a shifting focus through the lens of the artist. His currant paintings have become more minimalist. Favoring bold lines, and color in a reimagining of his own graphic roots. Elevating what grabs the eye, and casting the rest aside as unnecessary filler.",
           mainPic: "mattgeer.jpg",
           webLink: "https://www.facebook.com/matt.geer.39",
-          pics: 
-          [
-          "mattgeer1.jpg",
-          "mattgeer2.jpg",
-          "mattgeer3.jpg",
-          "mattgeer4.jpg",
-          "mattgeer5.jpg",
-          "mattgeer6.jpg",
-          "mattgeer7.jpg",
-          "mattgeer8.jpg",
-          "mattgeer9.jpg",
-          "mattgeer10.jpg",
+          pics: [
+            "mattgeer1.jpg",
+            "mattgeer2.jpg",
+            "mattgeer3.jpg",
+            "mattgeer4.jpg",
+            "mattgeer5.jpg",
+            "mattgeer6.jpg",
+            "mattgeer7.jpg",
+            "mattgeer8.jpg",
+            "mattgeer9.jpg",
+            "mattgeer10.jpg"
           ]
         },
         // "erin": {
@@ -169,7 +171,7 @@ export default {
             "juddpic14.jpg",
             "juddpic15.jpg",
             "juddpic16.jpg",
-            "juddpic17.jpg",
+            "juddpic17.jpg"
           ]
         },
         wendy: {
@@ -210,8 +212,6 @@ export default {
           //     "pic 3 .png",
           //   ]
         }
-
-        
       }
     };
   },

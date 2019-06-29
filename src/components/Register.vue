@@ -22,9 +22,13 @@
         </b-form-group>
       </b-form-group>
     </b-form-group>
+    <b-button type="submit">
+      submit
+    </b-button>
   </b-form>
 </template>
 <script>
+import axios from "axios" 
 export default {
   name: "Register",
   data() {
@@ -34,7 +38,12 @@ export default {
   }, 
   methods: {
       onSubmit (){
-
+        console.log('here')
+        axios.post("http://localhost:3000/users",{
+          name: this.form.name,
+          email: this.form.email,
+          password: this.form.password,
+        })
       },
       onReset (){
 
