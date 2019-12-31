@@ -53,37 +53,37 @@ export default {
   data: function() {
     return {
       artists: {
-        // babyboymiller: {
-        //   name: "Baby Boy Miller / Michael Michael Thomas",
-        //   artistPrefix: "Modern",
-        //   description:
-        //     "This Artist uses: Crayons, Pens, Marker, and Acrylic Paint.",
-        //   mainPic: "fergPic.jpg",
-        //   webLink: "https://www.facebook.com/michaelmichael.thomas",
-        //   pics: [
-        //     "fergpic1.jpg",
-        //     "bbm1.png",
-        //     "fergpic2.jpg",
-        //     "fergpic3.jpg",
-        //     "fergpic4.jpg",
-        //     "fergpic5.jpg",
-        //     "fergpic6.jpg",
-        //     "fergpic7.jpg",
-        //     "fergpic8.jpg",
-        //     "fergpic9.jpg",
-        //     "fergpic10.jpg",
-        //     "fergpic11.jpg",
-        //     "fergpic12.jpg",
-        //     "fergpic13.jpg",
-        //     "fergpic14.jpg",
-        //     "fergpic15.jpg",
-        //     "fergpic16.jpg",
-        //     "fergpic17.jpg",
-        //     "fergpic18.jpg",
-        //     "fergpic19.jpg",
-        //     "fergpic20.jpg",
-        //   ]
-        // },
+        babyboymiller: {
+          name: "Baby Boy Miller / Michael Michael Thomas",
+          artistPrefix: "Modern",
+          description:
+            "This Artist uses: Crayons, Pens, Marker, and Acrylic Paint.",
+          mainPic: "fergPic.jpg",
+          webLink: "https://www.facebook.com/michaelmichael.thomas",
+          pics: [
+            "fergpic1.jpg",
+            "bbm1.png",
+            "fergpic2.jpg",
+            "fergpic3.jpg",
+            "fergpic4.jpg",
+            "fergpic5.jpg",
+            "fergpic6.jpg",
+            "fergpic7.jpg",
+            "fergpic8.jpg",
+            "fergpic9.jpg",
+            "fergpic10.jpg",
+            "fergpic11.jpg",
+            "fergpic12.jpg",
+            "fergpic13.jpg",
+            "fergpic14.jpg",
+            "fergpic15.jpg",
+            "fergpic16.jpg",
+            "fergpic17.jpg",
+            "fergpic18.jpg",
+            "fergpic19.jpg",
+            "fergpic20.jpg",
+          ]
+        },
         eric: {
           name: "Eric Johnson",
           artistPrefix: "Chicago Native",

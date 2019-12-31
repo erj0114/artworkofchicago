@@ -12,9 +12,9 @@
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav>
           <b-nav-item-dropdown id="ddown1" text="FEATURED ARTISTS">
-            <!-- <b-dropdown-item>
+            <b-dropdown-item>
               <Artist name="Baby Boy Miller / Michael Michael Thomas" link="/artist/babyboymiller"/>
-            </b-dropdown-item>-->
+            </b-dropdown-item>
             <!-- <b-dropdown-item>
               <Artist name="Dave Depew" link="/artist/dave"/>
             </b-dropdown-item>-->
