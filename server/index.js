@@ -37,5 +37,5 @@ app.delete('/users/:id', usersTable.deleteUser)
 app.post('/checkLogin', usersTable.authenticateUser)
   
 app.listen(port, () => {
-    console.log(`App running on port ${port}.`)
+    console.log(`App running on port ${port}`)
   })
