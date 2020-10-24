@@ -7,7 +7,6 @@
   </div>
 </template>
 <script>
-import Home from './components/Home.vue'
 import Header from './components/Header.vue'
 import Navigation from './components/Navigation.vue'
 import Footer from './components/Footer.vue'
@@ -15,7 +14,6 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'app',
   components: {
-    Home,
     Header,
     Footer,
     Navigation

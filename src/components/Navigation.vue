@@ -15,18 +15,18 @@
             <b-dropdown-item>
               <Artist name="Baby Boy Miller / Michael Michael Thomas" link="/artist/babyboymiller"/>
             </b-dropdown-item>
-            <!-- <b-dropdown-item>
+            <b-dropdown-item>
               <Artist name="Dave Depew" link="/artist/dave"/>
-            </b-dropdown-item>-->
+            </b-dropdown-item>
             <b-dropdown-item>
               <Artist name="Eric Johnson" link="/artist/eric" />
             </b-dropdown-item>
             <!-- <b-dropdown-item>
               <Artist name="Erin Donnelly Ellis" link="/artist/erin"/>
             </b-dropdown-item>-->
-            <b-dropdown-item>
+            <!-- <b-dropdown-item>
               <Artist name="Judson Swertman" link="/artist/judson" />
-            </b-dropdown-item>
+            </b-dropdown-item> -->
             <b-dropdown-item>
               <Artist name="Matt Geer" link="/artist/mattgeer" />
             </b-dropdown-item>

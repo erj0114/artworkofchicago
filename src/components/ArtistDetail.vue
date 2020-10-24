@@ -133,47 +133,47 @@ export default {
 
         //   ]
         // },
-        judson: {
-          name: "Judson Schwertman",
-          artistPrefix: "Chicago Native",
-          description: "Abstract Painter / Modern Artist",
-          mainPic: "juddself.jpg",
-          instagramLink: "https://www.instagram.com/juddie_3birds/",
-          pics: [
-            "juddpainting3.png",
-            "juddEmailPainting.jpg",
-            "judd14.jpg",
-            "judd16.jpg",
-            "judd15.jpg",
-            "judd13.jpg",
-            "judd11.jpg",
-            "judd10.jpg",
-            "judd8.jpg",
-            "judd6.jpg",
-            "judd5.png",
-            "judd3.jpg",
-            "judd9.jpg",
-            "judd1.png",
-            "judd4.jpg",
-            "juddpic1.jpg",
-            "juddpic2.jpg",
-            "juddpic3.jpg",
-            "juddpic4.jpg",
-            "juddpic5.jpg",
-            "juddpic6.jpg",
-            "juddpic7.jpg",
-            "juddpic8.jpg",
-            "juddpic9.jpg",
-            "juddpic10.jpg",
-            "juddpic11.jpg",
-            "juddpic12.jpg",
-            "juddpic13.jpg",
-            "juddpic14.jpg",
-            "juddpic15.jpg",
-            "juddpic16.jpg",
-            "juddpic17.jpg"
-          ]
-        },
+        // judson: {
+        //   name: "Judson Schwertman",
+        //   artistPrefix: "Chicago Native",
+        //   description: "Abstract Painter / Modern Artist",
+        //   mainPic: "juddself.jpg",
+        //   instagramLink: "https://www.instagram.com/juddie_3birds/",
+        //   pics: [
+        //     "juddpainting3.png",
+        //     "juddEmailPainting.jpg",
+        //     "judd14.jpg",
+        //     "judd16.jpg",
+        //     "judd15.jpg",
+        //     "judd13.jpg",
+        //     "judd11.jpg",
+        //     "judd10.jpg",
+        //     "judd8.jpg",
+        //     "judd6.jpg",
+        //     "judd5.png",
+        //     "judd3.jpg",
+        //     "judd9.jpg",
+        //     "judd1.png",
+        //     "judd4.jpg",
+        //     "juddpic1.jpg",
+        //     "juddpic2.jpg",
+        //     "juddpic3.jpg",
+        //     "juddpic4.jpg",
+        //     "juddpic5.jpg",
+        //     "juddpic6.jpg",
+        //     "juddpic7.jpg",
+        //     "juddpic8.jpg",
+        //     "juddpic9.jpg",
+        //     "juddpic10.jpg",
+        //     "juddpic11.jpg",
+        //     "juddpic12.jpg",
+        //     "juddpic13.jpg",
+        //     "juddpic14.jpg",
+        //     "juddpic15.jpg",
+        //     "juddpic16.jpg",
+        //     "juddpic17.jpg"
+        //   ]
+        // },
         wendy: {
           name: "Wendy Montague",
           artistPrefix: "Chicago Native",
@@ -223,6 +223,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.btn {
+  margin-left: 20px;
+}
 .body-section {
   font-size: 30px;
 }
@@ -258,7 +261,6 @@ export default {
 .pic-container {
   width: 30%;
 }
-
 .instagramLink {
   background-color: coral;
   text-decoration-color: lightblue;

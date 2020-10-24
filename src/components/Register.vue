@@ -1,5 +1,5 @@
 <template>
-  <b-form @submit="onSubmit" @reset="onReset">
+  <b-form @submit="onSubmit()" @reset="onReset()">
     <b-form-group
       id="input-group-1"
       label="Email address:"
@@ -38,6 +38,7 @@ export default {
   }, 
   methods: {
       onSubmit (){
+        // eslint-disable-next-line no-console
         console.log('here')
         axios.post("http://localhost:3000/users",{
           name: this.form.name,

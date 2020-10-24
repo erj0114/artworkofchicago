@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import Artist from "./Artist.vue"
 export default {
   name: 'Home',
   computed: {
@@ -32,9 +31,6 @@ export default {
       }
       return response
     }
-  },
-  components: {
-    Artist
   },
   props: {
     msg: String
