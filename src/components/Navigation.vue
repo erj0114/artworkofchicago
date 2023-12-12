@@ -5,7 +5,7 @@
 
       <b-navbar-brand>
         <router-link to="/">
-          Artwork of Chicago
+          Chicago-Artwork
           <br />Home
         </router-link>
       </b-navbar-brand>
@@ -37,7 +37,7 @@
               <Artist name="Wendy Montague" link="/artist/wendy" />
             </b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item href="https://www.instagram.com/artworkofchicago/" class="instagram">
+          <b-nav-item href="https://www.instagram.com/chicago-artwork/" class="instagram">
             <i class="fab fa-instagram"></i>
             Instagram
           </b-nav-item>
@@ -87,7 +87,6 @@ li {
 .navbar-brand {
   font-weight: bold;
 }
-
 a {
   color: purple;
   text-decoration-color: red;

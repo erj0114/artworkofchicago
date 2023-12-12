@@ -1,6 +1,6 @@
 <template>
   <div id="footer">
-  <strong>Artwork of Chicago.com</strong><br>© 2018 All Rights Reserved
+  <strong>Chicago-Artwork.com</strong><br>© 2018 All Rights Reserved
 
   <social-sharing url="https://vuejs.org/"
                       title="The Progressive JavaScript Framework"

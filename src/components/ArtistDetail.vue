@@ -89,7 +89,7 @@ export default {
           artistPrefix: "Chicago Native",
           description: "Acrylic, Pencil, Marker, Crayon",
           mainPic: "birthdayFace.JPG",
-          webLink: "https://www.erj-art.com",
+          webLink: "https://www.artist-erj.com",
           pics: [
             "sunlightinthecavern.JPG",
             "autumn.png",
@@ -130,50 +130,6 @@ export default {
         //     "pic 1 .png",
         //     "pic 2 .png",
         //     "pic 3 .png",
-
-        //   ]
-        // },
-        // judson: {
-        //   name: "Judson Schwertman",
-        //   artistPrefix: "Chicago Native",
-        //   description: "Abstract Painter / Modern Artist",
-        //   mainPic: "juddself.jpg",
-        //   instagramLink: "https://www.instagram.com/juddie_3birds/",
-        //   pics: [
-        //     "juddpainting3.png",
-        //     "juddEmailPainting.jpg",
-        //     "judd14.jpg",
-        //     "judd16.jpg",
-        //     "judd15.jpg",
-        //     "judd13.jpg",
-        //     "judd11.jpg",
-        //     "judd10.jpg",
-        //     "judd8.jpg",
-        //     "judd6.jpg",
-        //     "judd5.png",
-        //     "judd3.jpg",
-        //     "judd9.jpg",
-        //     "judd1.png",
-        //     "judd4.jpg",
-        //     "juddpic1.jpg",
-        //     "juddpic2.jpg",
-        //     "juddpic3.jpg",
-        //     "juddpic4.jpg",
-        //     "juddpic5.jpg",
-        //     "juddpic6.jpg",
-        //     "juddpic7.jpg",
-        //     "juddpic8.jpg",
-        //     "juddpic9.jpg",
-        //     "juddpic10.jpg",
-        //     "juddpic11.jpg",
-        //     "juddpic12.jpg",
-        //     "juddpic13.jpg",
-        //     "juddpic14.jpg",
-        //     "juddpic15.jpg",
-        //     "juddpic16.jpg",
-        //     "juddpic17.jpg"
-        //   ]
-        // },
         wendy: {
           name: "Wendy Montague",
           artistPrefix: "Chicago Native",
@@ -200,7 +156,8 @@ export default {
           //   artistPrefix: "Chicago Native",
           //   description: "Painter and Drawer",
           //   mainPic: "davepic.jpg",
-          //   pics: ["pic 1 .png", "pic 2 .png", "pic 3 .png"]
+          //   pics: ["pic1.png", "pic2.png", "pic3.png"]
+          
           // },"thano": {
           //   name: "Thano Ellis",
           //   artistPrefix: "Chicago Native",
@@ -289,7 +246,7 @@ export default {
   transition: linear 1s;
 }
 .btn.btn-secondary {
-  text: bold;
+  font: bold;
   color: blue;
   background-color: coral;
   transition: linear 1s;
@@ -298,9 +255,8 @@ button.close {
   color: yellow;
   transition: linear 1s;
 }
-nav.drop-down. {
+.nav.drop-down {
   color: purple;
   transition: linear 1s;
 }
 </style>
->
