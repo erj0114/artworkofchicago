@@ -1,4 +1,4 @@
-# artworkofchicago.com
+# Chicago-Artwork.com.com
 ## Note to Self:
 
 Scrub Password for Database connection in db-connection.js
