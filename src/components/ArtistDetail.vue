@@ -150,13 +150,13 @@ export default {
             "wendypic10.jpg",
             "wendypic11.jpg"
           ]
-          // },
-          // dave: {
-          //   name: "Dave Depew",
-          //   artistPrefix: "Chicago Native",
-          //   description: "Painter and Drawer",
-          //   mainPic: "davepic.jpg",
-          //   pics: ["pic1.png", "pic2.png", "pic3.png"]
+          },
+          dave: {
+            name: "Dave Depew",
+            artistPrefix: "Chicago Native",
+            description: "Painter and Drawer",
+            mainPic: "davepic.jpg",
+            
           
           // },"thano": {
           //   name: "Thano Ellis",
